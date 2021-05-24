@@ -11,6 +11,13 @@ public class Cafetera implements InterfazCafetera {
     private int capacidadMaxima;
     private int cantidadActual;
 
+    /**
+     * Constructor de la clase Cafatera. Genera un objeto con los parámetros
+     * indicados.
+     *
+     * @param capacidadMaxima capacidad máxima de la cafetera.
+     * @param cantidadActual capacidad actual de la cafetera.
+     */
     public Cafetera(int capacidadMaxima, int cantidadActual) {
         this.cantidadActual = cantidadActual;
         this.capacidadMaxima = Math.max(capacidadMaxima, cantidadActual);
@@ -20,7 +27,7 @@ public class Cafetera implements InterfazCafetera {
      * Constructor de la clase Cafetera. Genera un objeto con el parámetro
      * indicado.
      *
-     * @param capacidadMaxima
+     * @param capacidadMaxima capacidad máxima de la cafetera.
      */
     public Cafetera(int capacidadMaxima) {
         this(capacidadMaxima, 0);
@@ -35,7 +42,7 @@ public class Cafetera implements InterfazCafetera {
     }
 
     /**
-     * LLena la cafetera sustituyendo el valor de la propiedad cantidadActual
+     * Llena la cafetera sustituyendo el valor de la propiedad cantidadActual
      * con el de cantidadMaxima.
      */
     @Override
@@ -87,7 +94,7 @@ public class Cafetera implements InterfazCafetera {
     }
 
     /**
-     * ç
+     * 
      * Devuelve el valor del atributo capacidadMaxima
      *
      * @return the capacidadMaxima la capacidad máxima de la cafetera.
